@@ -12,8 +12,6 @@
 .navbar-toggler {
     background-color: #b30000;
     border: 0;
-    width: 70px;
-    height: 60px;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -23,15 +21,24 @@
 }
 
 .navbar-brand {
+    font-family: "orbitron", sans-serif;
     font-weight: bold;
+    font-size: 100px;
+    color: #000000;
 }
 
 .nav-item {
     font-weight: bold;
     text-transform: uppercase;
-    
+ 
+}
+
+body {
+    color: #fff;
+    background-color: #000000;
 }
 .jumbotron {
+    margin: 0;
     height: 100vh;
     background: url("../images/kizomba.jpg");
     background-position: center;
@@ -44,7 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
+    position: relative;
 }
 
 .opaque-overlay {
@@ -52,12 +59,16 @@
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
     background-color: rgba(0,0,0,0.5);
+    z-index: 5;
 }
 
 .jumbotron-box {
     text-align: center;
     background-color: rgba(0,0,0,0.5);
+    padding: 50px;
+    z-index: 6;
 }
 
 .jumbotron-header {
@@ -65,12 +76,55 @@
 }
 
 .jumbotron p {
-    color: #e60000;
+    color: #fafafa;
      
 }
 
 footer {
     background-color:#660000;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.footer-details {
+    text-align: center;
+    color: #fff;
+}
+
+.footer-details h5 {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-details h6 {
+    text-transform: uppercase;
+}
+
+.footer-details p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+hr {
+    height: 5px;
+    background-color: #000000;
+}
+
+.social-links {
+    margin-top: 50px;
+}
+
+.social-links li a i {
+    font-size: 30px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32;
+    color: #fff;
+
 }
 
 .alert {
@@ -81,4 +135,42 @@ footer {
     border: 0;
     border-radius: 0;
     text-align: center;
+}
+
+.section-details {
+    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #000000;
+}
+
+/* buttons */
+
+.call-button {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+    background-color: #e60f0f;
+    color: #fff;
+}
+
+/* contact form */
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e60f0f;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+form input {
+    line-height: 40px;
+    background-color: fff;
+    margin-bottom: 1em;
 }
