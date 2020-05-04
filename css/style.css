@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Vollkorn:ital,wght@0,400;0,600;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 
 .navbar {
     margin-bottom: 0;
@@ -18,13 +18,11 @@
     background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
 }
 
-}
 
 .navbar-brand {
-    font-family: "orbitron", sans-serif;
-    font-weight: bold;
-    font-size: 100px;
-    color: #000000;
+    font-family: "Orbitron", sans-serif;
+    font-size: 40px !important;
+    line-height: 3px !important;
 }
 
 .nav-item {
@@ -54,13 +52,17 @@ body {
     position: relative;
 }
 
+.next-box {
+    background-color: rgba(175, 20, 20, 0.5);
+}
+
 .opaque-overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0, 0, 0.5);
     z-index: 5;
 }
 
@@ -110,7 +112,7 @@ footer {
 }
 
 hr {
-    height: 5px;
+    height: 2px;
     background-color: #000000;
 }
 
@@ -173,4 +175,23 @@ form input {
     line-height: 40px;
     background-color: fff;
     margin-bottom: 1em;
+}
+
+/* TABLE */
+
+.center-table {
+    margin-top: 40px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+festival-header {
+    text-align: center;
+}
+
+/* about */
+
+.about-details {
+    text-align: center;
+    margin: 0 auto;
 }
