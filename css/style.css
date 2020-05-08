@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 
 .navbar {
@@ -25,6 +26,30 @@
     line-height: 3px !important;
 }
 
+@media (max-width: 400px) {
+    .navbar-brand {
+      font-size: 20px;
+      color: #000000; 
+      float: right;          
+    }
+
+    .index-header {
+      padding-top: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .index-body {
+      display: block;
+      }
+
+      .index-header {
+      padding-top: 20px;
+    }
+}
+
+
+
 .nav-item {
     font-weight: bold;
     text-transform: uppercase;
@@ -35,7 +60,7 @@ body {
     color: #fff;
     background-color: #000000;
     padding-top: 150px;
-    
+    font-weight: 20px;   
 }
 .jumbotron {
     margin: 0;
@@ -62,6 +87,9 @@ body {
 
 .next-box h5 {
   padding-top: 20px;
+  text-transform: uppercase;
+
+}
 
 .opaque-overlay {
     position: absolute;
@@ -155,6 +183,11 @@ hr {
     background-color: #000000;
 }
 
+.index-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
 /* buttons */
 
 .call-button {
@@ -168,7 +201,7 @@ hr {
 /* contact form */
 
 button[type="submit"] {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 20px;
     color: #fafafa;
     background-color: #e60f0f;
@@ -180,6 +213,11 @@ button[type="submit"] {
     max-width: 70%;
 }
 
+.contact-heading {
+   margin-top: 80px;
+   text-transform: uppercase;
+}
+
 form input {
     line-height: 40px;
     background-color: fff;
@@ -189,14 +227,27 @@ form input {
 /* TABLE */
 
 .center-table {
-    margin-top: 40px;
+    margin-top: 60px;
     margin: 0 auto;
     color: #fff;
+    margin-right: 40px;
 }
+
+.table {
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-right: 60px;
+    padding-left: 40px;
+    color: #fff;
+    margin-bottom: 60px;
+  }
+
 
 .festival-header {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /* about */
@@ -204,6 +255,7 @@ form input {
   padding-top: 80px;
   padding-bottom: 50px;
   padding-right: 40px;
+  margin: 0 auto;
 }
 
 .about-header {
@@ -211,3 +263,9 @@ form input {
   text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 20px;
+}
+
+.gallery {
+  padding-top: 20px;
+  margin: 0;
+}
